@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<parameter name="browser two" value="edge"></parameter>
-	<test thread-count="5" name="Test One">
+	<test thread-count="10" name="Test One">
 		<parameter name="browser one" value="chrome"></parameter>
 		
 		<parameter name="user name" value="Sathish Greens"></parameter>
