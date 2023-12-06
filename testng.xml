@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="browser two" value="edge"></parameter>
+	<test thread-count="5" name="Test One">
+		<parameter name="browser one" value="chrome"></parameter>
+		
+		<parameter name="user name" value="Sathish Greens"></parameter>
+		<parameter name="password" value="Sa123"></parameter>
+		<classes>
+			<class name="org.testngpractice.Sample"></class>
+			<!-- <class name="org.testngpractice.AdactingTest"/>-->
+			<class name="org.testngpractice.FacebookTest"></class> 
+		</classes>
+	</test>
+	<test name="Test two">
+		<classes>
+			<class name="org.testngpractice.Sample"></class>
+		</classes>
+	</test>
+	
+	 <!--
+	Test -->
+</suite> <!--
+Suite -->

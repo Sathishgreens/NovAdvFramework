@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test two(failed)">
+    <classes>
+      <class name="org.testngpractice.Sample">
+        <methods>
+          <include name="tc1"/>
+        </methods>
+      </class> <!-- org.testngpractice.Sample -->
+    </classes>
+  </test> <!-- Test two(failed) -->
+</suite> <!-- Failed suite [Suite] -->

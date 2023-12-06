@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-30T08:47:46 IST" name="Default suite" finished-at="2023-11-30T08:48:01 IST" duration-ms="15088">
+    <groups>
+    </groups>
+    <test started-at="2023-11-30T08:47:46 IST" name="Default test" finished-at="2023-11-30T08:48:01 IST" duration-ms="15088">
+      <class name="org.testngpractice.AdactingTest">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:46 IST" name="tearUp" finished-at="2023-11-30T08:47:51 IST" duration-ms="5522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method is-config="true" signature="url()[pri:0, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:51 IST" name="url" finished-at="2023-11-30T08:47:53 IST" duration-ms="1649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="userLogin(java.lang.Object,java.lang.Object)[pri:1, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:53 IST" name="userLogin" data-provider="Login Data" finished-at="2023-11-30T08:47:57 IST" duration-ms="3679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sathishgreens123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Greens@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="url()[pri:0, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:57 IST" name="url" finished-at="2023-11-30T08:47:57 IST" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="userLogin(java.lang.Object,java.lang.Object)[pri:1, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:57 IST" name="userLogin" data-provider="Login Data" finished-at="2023-11-30T08:47:58 IST" duration-ms="1045" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sathish123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username_show"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [51b943c78f3f48cccfbc714f2a71d7d7, findElement {using=id, value=username_show}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53718}, msedge: {msedgedriverVersion: 119.0.2151.93 (423ba9baf131..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53718/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51b943c78f3f48cccfbc714f2a71d7d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username_show"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [51b943c78f3f48cccfbc714f2a71d7d7, findElement {using=id, value=username_show}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53718}, msedge: {msedgedriverVersion: 119.0.2151.93 (423ba9baf131..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53718/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51b943c78f3f48cccfbc714f2a71d7d7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getAttribute(Unknown Source)
+at org.base.BaseClass.getAttributeValue(BaseClass.java:153)
+at org.testngpractice.AdactingTest.userLogin(AdactingTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="url()[pri:0, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:58 IST" name="url" finished-at="2023-11-30T08:47:59 IST" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- url -->
+        <test-method signature="userLogin(java.lang.Object,java.lang.Object)[pri:1, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:47:59 IST" name="userLogin" data-provider="Login Data" finished-at="2023-11-30T08:48:00 IST" duration-ms="968" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sathishgreens12]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7777]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#username_show"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [51b943c78f3f48cccfbc714f2a71d7d7, findElement {using=id, value=username_show}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53718}, msedge: {msedgedriverVersion: 119.0.2151.93 (423ba9baf131..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53718/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51b943c78f3f48cccfbc714f2a71d7d7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username_show"}
+  (Session info: MicrosoftEdge=119.0.2151.93)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [51b943c78f3f48cccfbc714f2a71d7d7, findElement {using=id, value=username_show}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 119.0.2151.93, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:53718}, msedge: {msedgedriverVersion: 119.0.2151.93 (423ba9baf131..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53718/devtoo..., se:cdpVersion: 119.0.2151.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 51b943c78f3f48cccfbc714f2a71d7d7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getAttribute(Unknown Source)
+at org.base.BaseClass.getAttributeValue(BaseClass.java:153)
+at org.testngpractice.AdactingTest.userLogin(AdactingTest.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testngpractice.AdactingTest@4082ba93]" started-at="2023-11-30T08:48:00 IST" name="tearDown" finished-at="2023-11-30T08:48:01 IST" duration-ms="851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testngpractice.AdactingTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
